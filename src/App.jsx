@@ -15,11 +15,13 @@ function App() {
     }
   );
 
+  const [all, setAll] = useState(0)
+
   return (
     <div>
       <Header />
-      <Buttons ratings={ratings} setRatings={setRatings}/>
-      <Stats ratings={ratings}/>
+      <Buttons ratings={ratings} setRatings={setRatings} setAll={setAll} all={all}/>
+      <Stats ratings={ratings} all={all}/>
     </div>
   )
 }
