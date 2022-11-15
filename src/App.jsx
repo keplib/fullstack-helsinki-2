@@ -2,6 +2,8 @@ import Header from "./components/Header";
 import Stats from "./components/Stats";
 import Buttons from "./components/Buttons";
 
+import Anecdotes from "./components/Anecdotes";
+
 import { useState } from "react";
 
 
@@ -22,6 +24,7 @@ function App() {
       <Header />
       <Buttons ratings={ratings} setRatings={setRatings} setAll={setAll} all={all}/>
       <Stats ratings={ratings} all={all}/>
+      <Anecdotes />
     </div>
   )
 }
