@@ -1,3 +1,6 @@
+import Button from "./Button";
+
+
 const Buttons = ({ratings, setRatings, setAll, all}) => {
 
     const goodHandler = () => {
@@ -17,9 +20,9 @@ const Buttons = ({ratings, setRatings, setAll, all}) => {
 
     return (
         <div>
-            <span><button onClick={goodHandler}>good</button></span>
-            <span><button onClick={neutralHandler}>neutral</button></span>
-            <span><button onClick={badHandler}>bad</button></span>
+            <span><Button buttonText={"good"} actionHandler={goodHandler}/></span>
+            <span><Button buttonText={"neutral"} actionHandler={neutralHandler}/></span>
+            <span><Button buttonText={"bad"} actionHandler={badHandler}/></span>
         </div>
     )
 }
